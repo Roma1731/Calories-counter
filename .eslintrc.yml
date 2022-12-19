@@ -2,7 +2,12 @@ env:
   browser: true
   es2021: true
   node: true
-extends: airbnb-base
+plugins:
+  - html
+  - css-modules 
+extends: 
+  - airbnb-base
+  - plugin:css-modules/recommended
 overrides: []
 parserOptions:
   ecmaVersion: latest
