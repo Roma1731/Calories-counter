@@ -32,29 +32,103 @@
           <span>лет</span>
         </div>
         <div class="input-wrapper">
-          <input type="text" id="age" name="age" placeholder="0" inputmode="decimal" maxlength="3" required>
+          <input type="text" id="age" name="age" placeholder="0" maxlength="3" required>
       </div>
       <div class="input">
         <label for="height">Рост</label>
         <span>см</span>
       </div>
       <div class="input-wrapper">
-        <input type="text" id="height" name="height" placeholder="0" inputmode="decimal" maxlength="3" required>
+        <input type="text" id="height" name="height" placeholder="0" maxlength="3" required>
       </div>
       <div class="input">
         <label for="weight">Вес</label>
         <span>кг</span>
       </div>
       <div class="input-wrapper">
-        <input type="text" id="weight" name="weight" placeholder="0" inputmode="decimal" maxlength="3" required>
+        <input type="text" id="weight" name="weight" placeholder="0" maxlength="3" required>
     </div>
   </div>
       </fieldset>
       <fieldset class="form-item">
         <legend class="heading">Физическая активность</legend>
-
-      </fieldset>
+        <ul class="phys-group">
+          <li class="phys">
+            <div class="phys-wrapper">
+              <input id="activity-minimal" name="activity" value="min" type="radio" checked required>
+              <label for="activity-minimal">
+                Минимальная
+            </div>
+            <p class="phys-description">Сидячая работа и нет физических нагрузок</p>
+          </li>
+          <li class="phys">
+            <div class="phys-wrapper">
+              <input id="activity-low" name="activity" value="min" type="radio" checked required>
+              <label for="activity-low">
+                Низкая
+            </div>
+            <p class="phys-description">Редкие, неругулярные тренировки, активность в быту</p>
+          </li>
+        <li class="phys">
+          <div class="phys-wrapper">
+            <input id="activity-medium" name="activity" value="min" type="radio" checked required>
+            <label for="activity-medium">
+              Средняя
+          </div>
+          <p class="phys-description">Тренировки 3-5 раз в неделю</p>
+        </li>
+        <li class="phys">
+          <div class="phys-wrapper">
+            <input id="activity-high" name="activity" value="min" type="radio" checked required>
+            <label for="activity-high">
+              Высокая
+          </div>
+          <p class="phys-description">Тренировки 6-7 раз в неделю</p>
+        </li>
+        <li class="phys">
+          <div class="phys-wrapper">
+            <input id="activity-maixmal" name="activity" value="min" type="radio" checked required>
+            <label for="activity-maixmal">
+              Очень высокая
+          </div>
+          <p class="phys-description">Больше 6 тренироок в неделю и физическая работа</p>
+        </li>
+      </ul>
+    </fieldset>
+      <div class="calc-button">
+        <button>
+          Рассчитать
+        </button>
+        <button class="reset-button" name="reset" type="reset" disabled>
+          <span>
+            Очистить поля и расчёт
+          </span>
+        </button>
+      </div>
     </form>
+    <section>
+      <h2 class="heaing">Ваша норма калорий</h2>
+      <ul>
+        <li>
+          <h3>
+            <span class="calories-normal">3 800</span> ккал
+          </h3>
+          <p>поддержание веса</p>
+        </li>
+        <li>
+          <h3>
+            <span class="calories-normal">3 300</span> ккал
+          </h3>
+          <p>снижение веса</p>
+        </li>
+        <li>
+          <h3>
+            <span class="calories-normal">4 000</span> ккал
+          </h3>
+          <p>набор веса</p>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
