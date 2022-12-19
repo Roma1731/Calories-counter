@@ -6,9 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Счётик калорий</title>
 </head>
-<body>
-  <main>
-    <h1>Счётик калорий</h1>
+<body class="page">
+  <main class="main">
+    <div class="container"></div>
+    <h1 class="heading-main">Счётик калорий</h1>
+    <form class="form">
+      <div class="form">
+        <h2 class="heading">Пол</h2>
+        <ul class="switch">
+          <li class="gender-switch">
+            <input id="gender-male" name="gender" value="male" type="radio">
+            <label for="gender-male">Мужина</label>
+          </li>
+          <li class="gender-switch">
+            <input id="gender-female" name="gender" value="female" type="radio">
+            <label for="gender-female">Женщина</label>
+          </li>
+        </ul>
+      </div>
+      <fieldset class="form-parametrs form-item">
+        <legend class="hidden">Физические парамеры</legend>
+        <div class="input-group">
+        <div class="input">
+          <label for="age">Возраст</label>
+          <span>лет</span>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" id="age" name="age" placeholder="0" inputmode="decimal" maxlength="3" required>
+      </div>
+      <div class="input">
+        <label for="height">Рост</label>
+        <span>см</span>
+      </div>
+      <div class="input-wrapper">
+        <input type="text" id="height" name="height" placeholder="0" inputmode="decimal" maxlength="3" required>
+      </div>
+      <div class="input">
+        <label for="weight">Вес</label>
+        <span>кг</span>
+      </div>
+      <div class="input-wrapper">
+        <input type="text" id="weight" name="weight" placeholder="0" inputmode="decimal" maxlength="3" required>
+    </div>
+  </div>
+      </fieldset>
+      <fieldset class="form-item">
+        <legend class="heading">Физическая активность</legend>
+
+      </fieldset>
+    </form>
   </main>
 </body>
 </html>
